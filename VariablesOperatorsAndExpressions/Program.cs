@@ -4,10 +4,18 @@ namespace VariablesOperatorsAndExpressions
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Testing 1 2 3 4 5");
-            Console.ReadLine();
+            string greeting = "Hello, user! The game's start condition is: ";
+            bool gameStarted = false;
+            string displayGameState = greeting + gameStarted;
+            Console.WriteLine(displayGameState);
+
+            gameStarted = true;
+            displayGameState = greeting + gameStarted;
+            Console.WriteLine(displayGameState);
+            Console.ReadKey();
+
         }
     }
 }
