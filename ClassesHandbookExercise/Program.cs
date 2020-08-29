@@ -69,14 +69,33 @@ namespace ClassesHandbookExercise
         }
         
     };
-   
+
+    struct ServerInfo
+    {
+        int regionID; // region
+        int currentPlayerCount; // current player count
+        int maxPlayers; // max player count
+        int ping; // ping
+    };
+
+    class ServerBrowserService
+    {
+        // An array of all servers registered with the system.
+        private ServerInfo[] servers = new ServerInfo[50]; // note: this is hard-coded for 50 servers
+                                                           // A count of all servers currently registered.
+        private int serverCount;
+        // Registers a server with the service
+        public bool registerServer(ServerInfo newServer);
+        // Copies server entries into the given array.
+        // Returns the total number of servers provided to the array.
+        public int getServers(ServerInfo[] dstArray);
+    };
+
     class Program
     {
         static void Main(string[] args)
         {
-            DigitalPiggyBank bank = new DigitalPiggyBank();
-            bank.Deposit(50);
-            bank.Withdraw();
+        
         }
     }
 }
