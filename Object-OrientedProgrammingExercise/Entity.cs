@@ -6,45 +6,33 @@ namespace Object_OrientedProgrammingExercise
 {
     class Entity
     {
-        public float healthPoints = 100;
-        //// Accepts an attack with given number of damage points
-        //public void TakeDamge(float damagePoints)
-        //{
-        //    healthPoints -= damagePoints;
-        //}
+        public double health = 50;
 
-        //public float Attack(float pAttack)
-        //{
-        //    return pAttack;
-        //}
+        public double defense = 0;
+        public virtual void TakeDamage(double damagePoints)
+        {
+            health -= damagePoints*(1-defense);
+            if (health <= 0) {
+                health = 0;
+            }
+        }
 
-        //public bool IsDefeated
-        //{
-        //    get
-        //    {
-        //        // TODO how do we know if the player is defeated?
-        //        return false;
-        //    }
+        public double attack = 10;
 
-    //    public float health = 50;
-
-    //    // Accepts an attack with the given number of damage points
-    //    public virtual void TakeDamage(float damagePoints)
-    //    {
-    //        health -= damagePoints;
-    //    }
-    //    public virtual float Attack(float zAttack)
-    //    {
-    //        return zAttack;
-    //    }
-
-    //    public bool IsDefeated
-    //    {
-    //        get
-    //        {
-    //            // TODO when is the zombie defeated?
-    //            return false;
-    //        }
-    //    }
+        public bool IsDefeated
+        {
+            get
+            {
+                // TODO how do we know if the entity is defeated?
+                if (health <= 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }

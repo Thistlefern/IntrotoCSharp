@@ -82,18 +82,22 @@ namespace ClassesHandbookExercise
     {
         // An array of all servers registered with the system.
         private ServerInfo[] servers = new ServerInfo[50]; // note: this is hard-coded for 50 servers
-                                                           // A count of all servers currently registered.
+                                                           
+        // A count of all servers currently registered.
         private int serverCount;
         // Registers a server with the service
-        public bool registerServer(ServerInfo newServer);
+        public bool RegisterServer(ServerInfo newServer)
+        {
+            
+        }
         // Copies server entries into the given array.
         // Returns the total number of servers provided to the array.
-        public int getServers(ServerInfo[] dstArray);
+        public int GetServers(ServerInfo[] dstArray);
     };
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
         
         }

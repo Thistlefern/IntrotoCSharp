@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Object_OrientedProgrammingExercise
 {
-    class Item
+    class ArmedZombie : Zombie
     {
 
     }

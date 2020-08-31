@@ -32,8 +32,6 @@ namespace GuessTheNumber
 
 
                 int myNumber = nGenerator.Next(ceiling);
-
-                string playerGuess = "";
                 int playerGuessNum = 0;
                 Console.WriteLine($"Game number {g}.");
                 Console.WriteLine($"I am thinking of a whole number between 0 and {ceiling}");
@@ -43,7 +41,7 @@ namespace GuessTheNumber
                 {
                     Console.WriteLine("You have " + i.ToString() + " tries left.");
                     Console.WriteLine("Take a guess!");
-                    playerGuess = Console.ReadLine();
+                    string playerGuess = Console.ReadLine();
                     playerGuessNum = int.Parse(playerGuess);
                     if (playerGuessNum > myNumber)
                     {

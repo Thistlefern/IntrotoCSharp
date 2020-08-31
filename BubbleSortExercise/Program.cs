@@ -4,7 +4,7 @@ namespace BubbleSortExercise
 {
     class Program
     {
-        static void printArray(int[] array)
+        static void PrintArray(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -18,6 +18,7 @@ namespace BubbleSortExercise
             Console.WriteLine();
         }
         static void BubbleSort(int[] array)
+            // TODO This to do list will be my list of parts of the exercise that seem illogical to me.
         {
             //Bail for single element or invalid indices
             if (array.Length <= 1)
@@ -27,7 +28,7 @@ namespace BubbleSortExercise
             while (!sorted)
             {
                 sorted = true;
-                for (int i = 0; i < array.Length - 1; ++i)
+                for (int i = 0; i < array.Length - 1; ++i) // TODO Analysis part 1: isn't this already doing what is asked?
                 {
                     if (array[i] > array[i + 1])
                     {
@@ -40,7 +41,7 @@ namespace BubbleSortExercise
 
             }
         }
-        static void Main(string[] args)
+        static void Main()
         {
             //Define our data
             int[] arrayToBeSorted = new int[]
@@ -58,11 +59,11 @@ namespace BubbleSortExercise
              };
             //Print the unsorted array
             Console.WriteLine("Unsorted");
-            printArray(arrayToBeSorted);
+            PrintArray(arrayToBeSorted);
 
             BubbleSort(arrayToBeSorted);
             Console.WriteLine("\nSorted");
-            printArray(arrayToBeSorted);
+            PrintArray(arrayToBeSorted);
             Console.ReadLine();
 
 

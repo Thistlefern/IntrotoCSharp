@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Object_OrientedProgrammingExercise
 {
-    class Player : Entity
+    class Boss : Zombie
     {
-        
     }
 }
