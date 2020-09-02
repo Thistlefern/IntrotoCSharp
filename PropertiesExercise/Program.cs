@@ -5,21 +5,24 @@ namespace PropertiesExercise
     class Money
     {
         public double aud;
+        public double usd;
+
         public double AUD
         {
-            get => aud;
-            set => aud=value;
+            get
+            {
+                return aud;
+            }
         }
-        public double usd;
         public double USD
         {
             get
             {
-                return usd;
+                return aud;
             }
             set
             {
-               usd = aud * 0.8;
+                usd = value * 0.8;
             }
         }
     }
@@ -27,10 +30,16 @@ namespace PropertiesExercise
     {
         static void Main()
         {
-            Money wallet = new Money();
-            Console.WriteLine("How many Australian dollars do you have?");
-            wallet.aud = double.Parse(Console.ReadLine());
-            Console.WriteLine($"You have {wallet.aud} AUD, which is equal to {wallet.USD} USD.");
+            Money wallet = new Money
+            {
+                aud = 10
+            };
+
+            Console.WriteLine($"AUD: {wallet.aud}");
+            Console.WriteLine($"USD: {wallet.usd}");
+            Console.WriteLine($"AUD: {wallet.AUD}");
+            Console.WriteLine($"USD: {wallet.USD}");
         }
+        
     }
 }
