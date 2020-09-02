@@ -37,9 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPGWeaponsTest", "..\Walkal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSortExercise", "BubbleSortExercise\BubbleSortExercise.csproj", "{46FDCEBE-732F-47B0-9E4B-A04BD1B6CE73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesExercise", "PropertiesExercise\PropertiesExercise.csproj", "{06956C45-503E-4047-88AB-12972169F859}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysExercise", "ArraysExercise\ArraysExercise.csproj", "{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysExercise", "ArraysExercise\ArraysExercise.csproj", "{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesExercise", "PropertiesExercise\PropertiesExercise.csproj", "{CEE5CB63-11B3-4EA6-B79B-4918F7C71E1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,14 +115,14 @@ Global
 		{46FDCEBE-732F-47B0-9E4B-A04BD1B6CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46FDCEBE-732F-47B0-9E4B-A04BD1B6CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46FDCEBE-732F-47B0-9E4B-A04BD1B6CE73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06956C45-503E-4047-88AB-12972169F859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06956C45-503E-4047-88AB-12972169F859}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06956C45-503E-4047-88AB-12972169F859}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06956C45-503E-4047-88AB-12972169F859}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EBF45D4-5429-4D62-83E2-B294FC0A4CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE5CB63-11B3-4EA6-B79B-4918F7C71E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE5CB63-11B3-4EA6-B79B-4918F7C71E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE5CB63-11B3-4EA6-B79B-4918F7C71E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE5CB63-11B3-4EA6-B79B-4918F7C71E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
